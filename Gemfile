@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 2.7.0'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '9.0.6', platforms: :mri
+  gem 'sqlite3', '1.3.13'
   # Adds support for Capybara system testing and selenium driver
   # gem 'capybara', '~> 2.13'
   # gem 'selenium-webdriver'
@@ -61,7 +62,7 @@ end
 
 group :production do
   gem 'pg', '0.18.4'
-end 
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
